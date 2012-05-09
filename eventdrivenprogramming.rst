@@ -1,5 +1,5 @@
 =================================
-What is event driven programming?
+What Is Event-Driven Programming?
 =================================
 
 Wikipedia can give you a thorough definition:

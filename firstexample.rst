@@ -1,10 +1,10 @@
 ================
-A simple example
+A Simple Example
 ================
 
-Let's dive straight in.  This code shows usage of the three main components
-of a twisted application that were mentioned before: the rector, the Protocol,
-and the Factory.
+The previous section was pretty dry, so let's dive straight in.  This code
+shows usage of the three main components of a twisted application that were
+mentioned before: the rector, the Protocol, and the Factory.
 
 The following code will listen on port 1234, waiting for connections.  when
 it receives a connection, it will accept it, and wait for data to come in.

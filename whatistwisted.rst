@@ -1,5 +1,5 @@
 ================
-What is twisted?
+What Is twisted?
 ================
 
 http://twistedmatrix.com/trac/

@@ -2,7 +2,7 @@
 Using Deferreds
 ===============
 
-The above example is a simple one: it waits for data from the client, then
+The previous example was a simple one: it waits for data from the client, then
 performs its task returning a result immediately.  But any non-trivial program
 will need to perform some business logic that will take a potentially
 unbounded amount of time, such as communicating with a database.  If we

@@ -1,12 +1,10 @@
-.. Intro To Twisted documentation master file, created by
-   sphinx-quickstart on Tue May  8 23:16:45 2012.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
+================
 Intro To Twisted
 ================
 
-Contents:
+Written by Michael Frank <msfrank@syntaxjockey.com>
+
+Presented on May 10, 2012
 
 .. toctree::
    :maxdepth: 2
