@@ -49,4 +49,22 @@ print the error message to stdout::
 Multiple Callbacks
 ------------------
 
+More than one callback (or errback) can be registered with a Deferred.
+When there is more than callback, the return value for the first callback
+is passed as the first parameter to the next callback, and so on until
+all callbacks have been executed.
 
+The biggest stumbling block with multiple callbacks is how errors are
+handled.  Imagine callbacks and errbacks in a Deferred as two parallel
+lists.  First the function which generated the Deferred calls either
+Deferred.callback() or Deferred.errback(), depending on success or failure.
+Let's assume callback() was called, so processing starts at the first
+callback; if the callback succeeds, it proceeds to the next callback, but
+if it fails proceeds to the *second* errback.  If the errback returns a
+Failure object or raises an exception, then processing continues to the
+next errback.  However, if the errback returns an object other than a
+Failure (including None!) and doesn't raise an Exception, then processing
+moves back to the callback chain, proceeding with the *third* callback.
+
+A more thorough explanation of deferreds is available as part of the 
+twisted documentation: http://twistedmatrix.com/documents/current/core/howto/defer.html
