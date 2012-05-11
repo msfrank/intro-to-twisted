@@ -8,11 +8,23 @@ http://twistedmatrix.com/trac/
 protocols. It contains a web server, numerous chat clients, chat servers, mail
 servers, and more."
 
-Twisted brings a number of specific benefits:
+----------------
+Why Use Twisted?
+----------------
 
- * twisted comes out of the box with support for a large array of application
+Twisted as a whole brings a number of specific benefits:
+
+ * Twisted scales very well, handling many concurrent network connections.
+ * Twisted comes out of the box with support for a large array of application
    protocols.
- * twisted has an ecosystem of external libraries which integrate with the
+ * Twisted has an ecosystem of external libraries which integrate with the
    twisted reactor.
- * twisted is a mature codebase, with excellent test coverage, and has been
-   deployed in production.
+ * Twisted is a mature codebase, with excellent test coverage, and has been
+   proven in production.
+
+However, there are some caveats:
+
+ * Twisted does not support python 3.
+ * Twisted adds a certain amount of complexity to your code, and event driven
+   programming is not always easy to visualize.
+ * Twisted development progresses somewhat slowly.
