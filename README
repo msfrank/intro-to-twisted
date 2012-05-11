@@ -1,0 +1,4 @@
+Presentation done for SeaPIG on May 10, 2012
+
+To build the documentation, first make sure you have python, make, and sphinx
+installed.  Then, run 'make html' to build the HTML documentation.
