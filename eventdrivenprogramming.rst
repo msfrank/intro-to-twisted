@@ -17,7 +17,7 @@ for events.  Network programming is a canonical example:  you write data to a
 remote server, then wait for data to come back.  On the other hand, applications
 which are CPU-bound traditionally are not good candidates to implement using
 event driven programming, because long linear sequences of code must be broken
-up into chains of callbacks, which obscures and complicates the code.
+up into chains of callbacks, which obscures and complicates the code flow.
 
 Event driven programming is often single-threaded, although this is not always
 the case.  When single-threaded, access to shared resources is simpler, since
