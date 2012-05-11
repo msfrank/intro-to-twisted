@@ -23,7 +23,8 @@ abstract many of the nitty-gritty details.
 One interesting thing to note is that there are actually multiple reactor backends,
 which may be useful depending on your program.  For example, there is a gtk2 reactor
 which integrates with the glib event loop, making it easy to use twisted in a pygtk
-application.
+application.  Different platforms also may utilize different reactors, such as epoll
+on Linux, kqueues on BSD variants, and win32 on Windows.
 
 -----------
 The Factory
