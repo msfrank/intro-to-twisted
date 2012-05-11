@@ -15,3 +15,5 @@ Presented on May 10, 2012
    firstexample
    basicdeferreds
    moredeferreds
+   quicktour
+   moreinformation
